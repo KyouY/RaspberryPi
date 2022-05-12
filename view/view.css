@@ -1,0 +1,17 @@
+
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+.check{
+    color: rgb(127, 140, 255);
+    
+}
+.text{
+    float: center;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
