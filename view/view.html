@@ -7,10 +7,25 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='view.css'>
     <script src='view.js'></script>
+    <script src='./js/vue.js'></script>
 </head>
 <body>
-    <h1><button class="check">识别</button></h1>
-    <h2>查询结果:</h2>
-    <textarea class="text"></textarea>
+    <div id="app">
+      <a href=""><button class="check" @click = "btnClick">识别</button></a>
+      <h2>查询结果:</h2>
+      <textarea class="text">
+        这里是内容
+      </textarea>
+    </div>
+    <script>
+      const app = new  Vue({
+        el :"#app",
+        methods : {
+          btnClick(){
+            alert('确定识别吗？');
+          }
+        }
+      })  
+    </script>
 </body>
 </html>
